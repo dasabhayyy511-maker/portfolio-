@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Abhay Das Malikaveettil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="section-label">Get To Know Me</div>
+            <h1 class="page-title">About Me</h1>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="90" fill="#0a0e27" opacity="0.1"/>
+                            <circle cx="100" cy="75" r="30" fill="#00f0ff"/>
+                            <path d="M50 150 Q100 130 150 150" fill="#00f0ff"/>
+                        </svg>
+                        <p class="image-note">Replace with your photo</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Hello! I'm a Software Developer</h2>
+                    <p>
+                        I'm a second-year BSc Computer Science student with a strong interest in software development 
+                        and backend engineering. My passion lies in building reliable, scalable, and well-structured 
+                        applications that solve real-world problems.
+                    </p>
+                    <p>
+                        I have a solid foundation in Java programming and object-oriented design, and I enjoy solving 
+                        problems through clean logic and structured thinking. Through academic coursework and hands-on 
+                        practice, I am developing practical experience in building backend applications, working with 
+                        databases, and understanding how real-world software systems are designed.
+                    </p>
+                    <p>
+                        Alongside my studies, I am actively strengthening my skills in Core Java, data structures, SQL, 
+                        and backend development using Spring Boot. I value clear problem-solving, attention to detail, 
+                        and continuous learning. I'm working toward a career in software engineering, particularly in 
+                        Java backend and full-stack development, where I can contribute to building efficient systems 
+                        and impactful software solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I'm Learning -->
+    <section class="learning-section">
+        <div class="container">
+            <div class="section-label">Current Focus</div>
+            <h2>What I'm Learning</h2>
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <div class="card-number">01</div>
+                    <h3>Backend Development</h3>
+                    <p>Building RESTful APIs and microservices with Spring Boot, focusing on clean architecture and scalable design patterns.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="card-number">02</div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Strengthening problem-solving skills through core data structures, algorithms, and competitive programming practice.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="card-number">03</div>
+                    <h3>Database Design</h3>
+                    <p>Working with SQL databases, understanding normalization, complex queries, and optimizing database performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Info -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-column">
+                    <div class="section-label">Background</div>
+                    <h2>My Journey</h2>
+                    <p>
+                        My journey into software development began with curiosity about how applications work behind 
+                        the scenes. As I dove deeper into Computer Science, I discovered my passion for backend 
+                        development - the art of building the engines that power modern applications.
+                    </p>
+                    <p>
+                        Based in Ajman, UAE, I'm currently pursuing my BSc in Computer Science while actively building 
+                        projects and learning industry-standard technologies. When I'm not coding, I enjoy exploring 
+                        new frameworks, reading about software architecture, and solving challenging programming problems.
+                    </p>
+                </div>
+                <div class="info-column">
+                    <div class="section-label">Goals</div>
+                    <h2>Looking Forward</h2>
+                    <div class="goals-list">
+                        <div class="goal-item">
+                            <div class="goal-icon">✓</div>
+                            <div class="goal-text">
+                                <h4>Secure Backend Internship</h4>
+                                <p>Gain hands-on experience in production backend systems and learn from industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-icon">✓</div>
+                            <div class="goal-text">
+                                <h4>Master Java & Spring Boot</h4>
+                                <p>Build production-grade applications with clean architecture and best practices</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-icon">✓</div>
+                            <div class="goal-text">
+                                <h4>Contribute to Open Source</h4>
+                                <p>Collaborate with developers worldwide and contribute to meaningful projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Working Together?</h2>
+                <p>I'm actively seeking internship opportunities to grow my skills.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abhay Das Malikaveettil. Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

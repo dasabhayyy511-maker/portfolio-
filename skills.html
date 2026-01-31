@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Abhay Das Malikaveettil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="section-label">Technical Abilities</div>
+            <h1 class="page-title">My Skills</h1>
+            <p class="page-subtitle">Technologies and tools I work with</p>
+        </div>
+    </section>
+
+    <!-- Core Skills -->
+    <section class="skills-detail-section">
+        <div class="container">
+            <div class="section-label">Core Technologies</div>
+            <h2>What I Know</h2>
+            
+            <div class="skill-detail-grid">
+                <!-- Java -->
+                <div class="skill-detail-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-large html-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L3 4V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V4L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Core Java</h3>
+                            <div class="skill-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="level-text">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Strong foundation in Core Java, object-oriented programming principles, and design patterns. 
+                        Experienced in writing clean, maintainable, and production-ready code.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">OOP Principles</span>
+                        <span class="tag">Collections</span>
+                        <span class="tag">Exception Handling</span>
+                        <span class="tag">Multithreading</span>
+                    </div>
+                </div>
+
+                <!-- Spring Boot -->
+                <div class="skill-detail-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-large css-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 8L8 12L12 16L16 12L12 8Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Spring Boot</h3>
+                            <div class="skill-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="level-text">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Building RESTful APIs and microservices using Spring Boot framework. Understanding of 
+                        dependency injection, MVC architecture, and backend development best practices.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Spring MVC</span>
+                        <span class="tag">Dependency Injection</span>
+                        <span class="tag">Spring Data JPA</span>
+                    </div>
+                </div>
+
+                <!-- SQL & Databases -->
+                <div class="skill-detail-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-large js-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="18" height="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M7 7H17M7 12H17M7 17H13" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>SQL & Databases</h3>
+                            <div class="skill-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="level-text">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Proficient in SQL and relational database design. Experience with complex queries, 
+                        joins, normalization, and understanding of database optimization techniques.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Complex Queries</span>
+                        <span class="tag">Database Design</span>
+                        <span class="tag">Normalization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Skills -->
+    <section class="additional-skills">
+        <div class="container">
+            <div class="section-label">Other Knowledge</div>
+            <h2>Tools & Concepts</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <div class="tool-icon">⚡</div>
+                    <h4>Git & GitHub</h4>
+                    <p>Version control & collaboration</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">🎨</div>
+                    <h4>Data Structures</h4>
+                    <p>Arrays, LinkedLists, Trees, Graphs</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">🔍</div>
+                    <h4>REST APIs</h4>
+                    <p>API design & development</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">📱</div>
+                    <h4>Postman</h4>
+                    <p>API testing & documentation</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">♿</div>
+                    <h4>Maven</h4>
+                    <p>Build automation & dependencies</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon">⚙️</div>
+                    <h4>IntelliJ IDEA</h4>
+                    <p>IDE proficiency & debugging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="learning-path">
+        <div class="container">
+            <div class="section-label">Continuous Growth</div>
+            <h2>What's Next</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker completed"></div>
+                    <div class="timeline-content">
+                        <h4>Core Java & OOP</h4>
+                        <p>Mastered Java fundamentals and object-oriented programming concepts</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <h4>Spring Boot & REST APIs</h4>
+                        <p>Currently building backend applications and RESTful web services</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Microservices Architecture</h4>
+                        <p>Planning to learn distributed systems and microservices patterns</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Cloud & DevOps</h4>
+                        <p>Future goal: AWS, Docker, Kubernetes, and CI/CD pipelines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let's Build Something Together</h2>
+                <p>Ready to contribute my skills to your team.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abhay Das Malikaveettil. Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
