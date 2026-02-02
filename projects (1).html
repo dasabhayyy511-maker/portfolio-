@@ -31,8 +31,8 @@
     <section class="page-header">
         <div class="container">
             <div class="section-label">My Work</div>
-            <h1 class="page-title">Projects</h1>
-            <p class="page-subtitle">Android applications built with Java</p>
+            <h1 class="page-title">Android Projects</h1>
+            <p class="page-subtitle">Mobile applications built with Java & Android Studio</p>
         </div>
     </section>
 
@@ -42,195 +42,211 @@
             <div class="section-label">Portfolio</div>
             <h2>Featured Projects</h2>
             <p class="section-intro">
-                Here are some Android applications I've built using Java and Android Studio, 
-                demonstrating my skills in mobile app development, UI design, and problem-solving.
+                A collection of Android applications demonstrating my skills in mobile development, 
+                UI/UX design, input validation, and problem-solving through clean Java code.
             </p>
 
             <div class="projects-grid">
                 <!-- Project 1: Authentication App -->
                 <div class="project-card">
-                    <div class="project-number">01</div>
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="5" y="11" width="14" height="10" stroke="currentColor" stroke-width="2" rx="2"/>
-                            <path d="M12 15V17" stroke="currentColor" stroke-width="2"/>
-                            <path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                    <div class="project-image">
+                        <img src="Authenticaton_app_mockup.jpg" alt="Authentication App">
+                        <div class="project-overlay">
+                            <span class="project-status">Practice Project</span>
+                        </div>
                     </div>
-                    <h3>Authentication App</h3>
-                    <p class="project-description">
-                        A secure authentication system implementing user login, registration, and session management. 
-                        Features include input validation, password encryption, and secure data storage using SharedPreferences.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Android Studio</span>
-                        <span class="tech-tag">SQLite</span>
-                        <span class="tech-tag">SharedPreferences</span>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>User registration with validation</li>
-                            <li>Secure login system</li>
-                            <li>Password encryption</li>
-                            <li>Session management</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" onclick="return false;">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="currentColor"/>
-                            </svg>
-                            View Code
-                        </a>
+                    <div class="project-content">
+                        <h3>Authentication App</h3>
+                        <p class="project-description">
+                            A secure user authentication system with login and registration functionality. 
+                            Implements comprehensive input validation to ensure data integrity and user security.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>User login with credential validation</li>
+                                <li>Registration form with empty field checks</li>
+                                <li>Real-time error handling and feedback</li>
+                                <li>Clean and intuitive UI design</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-challenge">
+                            <h4>Technical Challenge</h4>
+                            <p>
+                                Implemented robust validation logic to handle empty fields and incorrect credentials. 
+                                The app now provides clear feedback to users and prevents login attempts with invalid data, 
+                                improving both security and user experience.
+                            </p>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">XML Layouts</span>
+                            <span class="tech-tag">Input Validation</span>
+                            <span class="tech-tag">OnClickListener</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Weight Converter App -->
                 <div class="project-card">
-                    <div class="project-number">02</div>
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 10L12 4L17 10" stroke="currentColor" stroke-width="2"/>
-                            <path d="M7 14L12 20L17 14" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 4V20" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                    <div class="project-image">
+                        <img src="Weight_Converter_app.jpg" alt="Weight Converter App">
+                        <div class="project-overlay">
+                            <span class="project-status">Practice Project</span>
+                        </div>
                     </div>
-                    <h3>Weight Converter App</h3>
-                    <p class="project-description">
-                        A utility application that converts weight between different units (kg, lbs, oz, grams). 
-                        Features a clean UI with real-time conversion and supports multiple weight measurement systems.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Android Studio</span>
-                        <span class="tech-tag">Material Design</span>
-                        <span class="tech-tag">UI/UX</span>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Multiple unit conversions (kg, lbs, oz, g)</li>
-                            <li>Real-time calculation</li>
-                            <li>Clean and intuitive interface</li>
-                            <li>Input validation and error handling</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" onclick="return false;">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="currentColor"/>
-                            </svg>
-                            View Code
-                        </a>
+                    <div class="project-content">
+                        <h3>Weight Converter App</h3>
+                        <p class="project-description">
+                            A practical unit conversion tool that converts weights between kilograms and pounds. 
+                            Features real-time conversion with comprehensive error handling for a seamless user experience.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Bidirectional conversion (Kg ↔ Lbs)</li>
+                                <li>Real-time calculation and display</li>
+                                <li>Input validation to prevent crashes</li>
+                                <li>Clear and reset functionality</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-challenge">
+                            <h4>Technical Challenge</h4>
+                            <p>
+                                Solved critical stability issues by implementing input validation before conversion. 
+                                The app now gracefully handles empty or non-numeric inputs, eliminating runtime errors 
+                                and providing accurate conversion results with user-friendly error messages.
+                            </p>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">XML</span>
+                            <span class="tech-tag">EditText</span>
+                            <span class="tech-tag">Type Parsing</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Catalogue App -->
+                <!-- Project 3: Animal Catalogue App -->
                 <div class="project-card">
-                    <div class="project-number">03</div>
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
-                            <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
-                            <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
-                            <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" rx="1"/>
-                        </svg>
+                    <div class="project-image">
+                        <img src="Catalogue_app_mockup.jpg" alt="Animal Catalogue App">
+                        <div class="project-overlay">
+                            <span class="project-status">Practice Project</span>
+                        </div>
                     </div>
-                    <h3>Catalogue App</h3>
-                    <p class="project-description">
-                        A product catalogue application for browsing and managing items. Implements RecyclerView for 
-                        efficient list display, with features for adding, viewing, and organizing product information.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Android Studio</span>
-                        <span class="tech-tag">RecyclerView</span>
-                        <span class="tech-tag">SQLite</span>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Product listing with RecyclerView</li>
-                            <li>Add and manage catalogue items</li>
-                            <li>Search and filter functionality</li>
-                            <li>Local database storage</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" onclick="return false;">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="currentColor"/>
-                            </svg>
-                            View Code
-                        </a>
+                    <div class="project-content">
+                        <h3>Animal Catalogue App</h3>
+                        <p class="project-description">
+                            An interactive catalogue application featuring swipeable animal cards with categories. 
+                            Demonstrates dynamic content management and smooth UI navigation through ViewPager implementation.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Category-based animal browsing</li>
+                                <li>Swipeable card interface with ViewPager</li>
+                                <li>Dynamic content updates on category change</li>
+                                <li>Image gallery with navigation controls</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-challenge">
+                            <h4>Technical Challenge</h4>
+                            <p>
+                                Implemented efficient data management using HashMaps and Lists to handle dynamic content updates. 
+                                Optimized the category filtering system to ensure smooth transitions and proper UI synchronization 
+                                when users switch between different animal categories.
+                            </p>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">ViewPager</span>
+                            <span class="tech-tag">HashMap</span>
+                            <span class="tech-tag">Custom Adapter</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 4: Button Interaction App -->
                 <div class="project-card">
-                    <div class="project-number">04</div>
-                    <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="4" y="8" width="16" height="8" stroke="currentColor" stroke-width="2" rx="2"/>
-                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                        </svg>
+                    <div class="project-image">
+                        <img src="BUTTON_INTERACT_MOCKUP2.jpg" alt="Button Interaction App">
+                        <div class="project-overlay">
+                            <span class="project-status">Practice Project</span>
+                        </div>
                     </div>
-                    <h3>Button Interaction App</h3>
-                    <p class="project-description">
-                        An interactive application demonstrating various button interactions and UI event handling. 
-                        Showcases different button types, click events, animations, and user feedback mechanisms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Android Studio</span>
-                        <span class="tech-tag">Event Handling</span>
-                        <span class="tech-tag">Animations</span>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Multiple button interaction patterns</li>
-                            <li>Click event handling</li>
-                            <li>Visual feedback and animations</li>
-                            <li>Toast and Snackbar notifications</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" onclick="return false;">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="currentColor"/>
-                            </svg>
-                            View Code
-                        </a>
+                    <div class="project-content">
+                        <h3>Button Interaction App</h3>
+                        <p class="project-description">
+                            An engaging UI application demonstrating advanced button interaction patterns and state management. 
+                            Features colorful animal selection buttons with smooth visual feedback and consistent behavior.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Multiple interactive button elements</li>
+                                <li>Color-changing animal selection system</li>
+                                <li>Smooth click animations and feedback</li>
+                                <li>Consistent UI state management</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-challenge">
+                            <h4>Technical Challenge</h4>
+                            <p>
+                                Refactored repetitive event handling code to eliminate unexpected behavior from rapid clicks. 
+                                Implemented efficient OnClickListener logic that ensures only one UI action occurs per click, 
+                                significantly improving code readability and application responsiveness.
+                            </p>
+                        </div>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OnClickListener</span>
+                            <span class="tech-tag">UI State Management</span>
+                            <span class="tech-tag">Event Handling</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technologies Section -->
-    <section class="tech-stack-section">
+    <!-- Learning Section -->
+    <section class="projects-learning">
         <div class="container">
-            <div class="section-label">Development Stack</div>
-            <h2>Technologies Used</h2>
-            <div class="tech-stack-grid">
-                <div class="tech-stack-item">
-                    <h4>Languages</h4>
-                    <p>Java, XML</p>
+            <div class="section-label">Development Journey</div>
+            <h2>What I Learned</h2>
+            <div class="learning-insights">
+                <div class="insight-card">
+                    <div class="insight-icon">🎯</div>
+                    <h3>Input Validation</h3>
+                    <p>Mastered comprehensive validation techniques to prevent crashes and ensure data integrity across all user inputs.</p>
                 </div>
-                <div class="tech-stack-item">
-                    <h4>Tools</h4>
-                    <p>Android Studio, Git</p>
+                <div class="insight-card">
+                    <div class="insight-icon">🔧</div>
+                    <h3>Error Handling</h3>
+                    <p>Implemented robust error handling mechanisms that provide clear feedback and maintain app stability under all conditions.</p>
                 </div>
-                <div class="tech-stack-item">
-                    <h4>Database</h4>
-                    <p>SQLite, SharedPreferences</p>
+                <div class="insight-card">
+                    <div class="insight-icon">⚡</div>
+                    <h3>Code Optimization</h3>
+                    <p>Refined code structure by eliminating duplication and improving efficiency, resulting in cleaner and more maintainable applications.</p>
                 </div>
-                <div class="tech-stack-item">
-                    <h4>UI/UX</h4>
-                    <p>Material Design, RecyclerView</p>
+                <div class="insight-card">
+                    <div class="insight-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Developed intuitive interfaces with smooth interactions, focusing on user experience and visual consistency throughout the apps.</p>
                 </div>
             </div>
         </div>
@@ -240,8 +256,8 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Want to See More?</h2>
-                <p>I'm continuously building new projects and improving my skills.</p>
+                <h2>Let's Build Something Together</h2>
+                <p>Interested in my work? I'm actively seeking internship opportunities to grow my mobile development skills.</p>
                 <a href="contact.html" class="btn btn-primary">Get In Touch</a>
             </div>
         </div>
