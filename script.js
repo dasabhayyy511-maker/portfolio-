@@ -1,7 +1,4 @@
-// ================================
-// Mobile Navigation Toggle
-// ================================
-
+// Mobile Menu Toggle
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     const menuToggle = document.querySelector('.menu-toggle');
@@ -10,39 +7,24 @@ function toggleMenu() {
     menuToggle.classList.toggle('active');
 }
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        const navLinks = document.querySelector('.nav-links');
-        const menuToggle = document.querySelector('.menu-toggle');
-        
-        navLinks.classList.remove('active');
-        menuToggle.classList.remove('active');
+// Close mobile menu when clicking a link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const navLinksContainer = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (navLinksContainer.classList.contains('active')) {
+                navLinksContainer.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
     });
 });
 
-// ================================
-// Smooth Scrolling for Anchor Links
-// ================================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// ================================
 // Contact Form Handling
-// ================================
-
 function handleSubmit(event) {
     event.preventDefault();
     
@@ -57,49 +39,42 @@ function handleSubmit(event) {
         message: form.message.value
     };
     
-    // Log form data (in a real app, you'd send this to a server)
+    // Log to console (replace with actual form submission logic)
     console.log('Form submitted:', formData);
     
-    // Hide form and show success message
+    // Show success message
     form.style.display = 'none';
-    successMessage.classList.add('show');
+    successMessage.style.display = 'block';
     
-    // Optional: Reset form after 5 seconds
-    setTimeout(() => {
+    // Reset form after 3 seconds
+    setTimeout(function() {
         form.reset();
         form.style.display = 'block';
-        successMessage.classList.remove('show');
-    }, 5000);
-    
-    return false;
+        successMessage.style.display = 'none';
+    }, 3000);
 }
 
-// ================================
-// Navbar Background on Scroll
-// ================================
-
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
-    } else {
-        navbar.style.background = 'rgba(10, 14, 39, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
+// Smooth Scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
 });
 
-// ================================
-// Animate Elements on Scroll
-// ================================
-
+// Add scroll animation to elements
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
@@ -108,101 +83,39 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all skill items, cards, etc.
-document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll(
-        '.skill-item, .learning-card, .skill-detail-card, .tool-item, .timeline-item'
-    );
+// Observe elements when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.skill-item, .learning-card, .project-card, .tool-item');
     
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'all 0.6s ease';
-        observer.observe(el);
+    animatedElements.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(element);
     });
 });
 
-// ================================
-// Dynamic Year in Footer
-// ================================
+// Navbar scroll effect
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const yearElement = document.querySelector('.footer-bottom p');
-    if (yearElement) {
-        const currentYear = new Date().getFullYear();
-        yearElement.textContent = yearElement.textContent.replace('2024', currentYear);
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+        navbar.classList.remove('scroll-up');
+        return;
     }
-});
-
-// ================================
-// Add Active Class to Current Page
-// ================================
-
-document.addEventListener('DOMContentLoaded', () => {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        const href = link.getAttribute('href');
-        
-        if (href === currentPage || 
-            (currentPage === '' && href === 'index.html')) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// ================================
-// Skill Level Animation
-// ================================
-
-const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const fill = entry.target;
-            const width = fill.style.width;
-            fill.style.width = '0';
-            
-            setTimeout(() => {
-                fill.style.width = width;
-            }, 200);
-            
-            skillObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.level-fill').forEach(fill => {
-        skillObserver.observe(fill);
-    });
-});
-
-// ================================
-// Form Validation Enhancement
-// ================================
-
-document.addEventListener('DOMContentLoaded', () => {
-    const formInputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+    if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+        // Scroll Down
+        navbar.classList.remove('scroll-up');
+        navbar.classList.add('scroll-down');
+    } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+        // Scroll Up
+        navbar.classList.remove('scroll-down');
+        navbar.classList.add('scroll-up');
+    }
     
-    formInputs.forEach(input => {
-        input.addEventListener('blur', function() {
-            if (this.value.trim() !== '') {
-                this.style.borderColor = 'rgba(39, 201, 63, 0.5)';
-            } else if (this.hasAttribute('required')) {
-                this.style.borderColor = 'rgba(255, 0, 110, 0.5)';
-            }
-        });
-        
-        input.addEventListener('focus', function() {
-            this.style.borderColor = 'var(--primary)';
-        });
-    });
+    lastScroll = currentScroll;
 });
-
-// ================================
-// Console Message
-// ================================
-
-console.log('%c👋 Hello Developer!', 'color: #00f0ff; font-size: 20px; font-weight: bold;');
-console.log('%cThanks for checking out my portfolio!', 'color: #a0aec0; font-size: 14px;');
-console.log('%cBuilt with HTML, CSS, and JavaScript', 'color: #718096; font-size: 12px;');
