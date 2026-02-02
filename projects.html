@@ -8,278 +8,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-brand">
-            <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <div class="section-label">My Work</div>
-            <h1 class="page-title">Android Projects</h1>
-            <p class="page-subtitle">Mobile applications built with Java & Android Studio</p>
-        </div>
-    </section>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-brand">
+        <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
 
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <div class="container">
-            <div class="section-label">Portfolio</div>
-            <h2>Featured Projects</h2>
-            <p class="section-intro">
-                A collection of Android applications demonstrating my skills in mobile development, 
-                UI/UX design, input validation, and problem-solving through clean Java code.
-            </p>
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="section-label">My Work</div>
+        <h1 class="page-title">Android Projects</h1>
+        <p class="page-subtitle">Mobile applications built with Java & Android Studio</p>
+    </div>
+</section>
 
-            <div class="projects-grid">
-                <!-- Project 1: Authentication App -->
-                <div class="project-card">
-                    <div class="project-image">
-  <img src="assets/Weight_Converter_app.webp" alt="Weight Converter Preview" loading="lazy">
-</div>
+<!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+        <div class="section-label">Portfolio</div>
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+            A collection of Android applications demonstrating my skills in mobile development,
+            UI/UX design, and clean Java implementation.
+        </p>
 
-                    </div>
-                    <div class="project-content">
-                        <h3>Authentication App</h3>
-                        <p class="project-description">
-                            A secure user authentication system with login and registration functionality. 
-                            Implements comprehensive input validation to ensure data integrity and user security.
-                        </p>
-                        
-                        <div class="project-features">
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>User login with credential validation</li>
-                                <li>Registration form with empty field checks</li>
-                                <li>Real-time error handling and feedback</li>
-                                <li>Clean and intuitive UI design</li>
-                            </ul>
-                        </div>
+        <div class="projects-grid">
 
-                        <div class="project-challenge">
-                            <h4>Technical Challenge</h4>
-                            <p>
-                                Implemented robust validation logic to handle empty fields and incorrect credentials. 
-                                The app now provides clear feedback to users and prevents login attempts with invalid data, 
-                                improving both security and user experience.
-                            </p>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">XML Layouts</span>
-                            <span class="tech-tag">Input Validation</span>
-                            <span class="tech-tag">OnClickListener</span>
-                        </div>
-                    </div>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Authentication_app.webp" alt="Authentication App Preview" loading="lazy">
                 </div>
-
-                <!-- Project 2: Weight Converter App -->
-                <div class="project-card">
-                    <div class="project-image">
-  <img src="assets/Weight_Converter_app.webp" alt="Weight Converter Preview" loading="lazy">
-</div>
-
+                <div class="project-content">
+                    <h3>Authentication App</h3>
+                    <p class="project-description">
+                        A secure authentication system with login and registration functionality.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>User login validation</li>
+                            <li>Registration checks</li>
+                            <li>Error feedback</li>
+                            <li>Clean UI</li>
+                        </ul>
                     </div>
-                    <div class="project-content">
-                        <h3>Weight Converter App</h3>
-                        <p class="project-description">
-                            A practical unit conversion tool that converts weights between kilograms and pounds. 
-                            Features real-time conversion with comprehensive error handling for a seamless user experience.
-                        </p>
-                        
-                        <div class="project-features">
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>Bidirectional conversion (Kg ↔ Lbs)</li>
-                                <li>Real-time calculation and display</li>
-                                <li>Input validation to prevent crashes</li>
-                                <li>Clear and reset functionality</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-challenge">
-                            <h4>Technical Challenge</h4>
-                            <p>
-                                Solved critical stability issues by implementing input validation before conversion. 
-                                The app now gracefully handles empty or non-numeric inputs, eliminating runtime errors 
-                                and providing accurate conversion results with user-friendly error messages.
-                            </p>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">XML</span>
-                            <span class="tech-tag">EditText</span>
-                            <span class="tech-tag">Type Parsing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Animal Catalogue App -->
-                <div class="project-card">
-                    <div class="project-image">
-  <img src="assets/Weight_Converter_app.webp" alt="Weight Converter Preview" loading="lazy">
-</div>
-
-                    </div>
-                    <div class="project-content">
-                        <h3>Animal Catalogue App</h3>
-                        <p class="project-description">
-                            An interactive catalogue application featuring swipeable animal cards with categories. 
-                            Demonstrates dynamic content management and smooth UI navigation through ViewPager implementation.
-                        </p>
-                        
-                        <div class="project-features">
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>Category-based animal browsing</li>
-                                <li>Swipeable card interface with ViewPager</li>
-                                <li>Dynamic content updates on category change</li>
-                                <li>Image gallery with navigation controls</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-challenge">
-                            <h4>Technical Challenge</h4>
-                            <p>
-                                Implemented efficient data management using HashMaps and Lists to handle dynamic content updates. 
-                                Optimized the category filtering system to ensure smooth transitions and proper UI synchronization 
-                                when users switch between different animal categories.
-                            </p>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">ViewPager</span>
-                            <span class="tech-tag">HashMap</span>
-                            <span class="tech-tag">Custom Adapter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Button Interaction App -->
-                <div class="project-card">
-                    <div class="project-image">
-  <img src="assets/Weight_Converter_app.webp" alt="Weight Converter Preview" loading="lazy">
-</div>
-
-                    </div>
-                    <div class="project-content">
-                        <h3>Button Interaction App</h3>
-                        <p class="project-description">
-                            An engaging UI application demonstrating advanced button interaction patterns and state management. 
-                            Features colorful animal selection buttons with smooth visual feedback and consistent behavior.
-                        </p>
-                        
-                        <div class="project-features">
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li>Multiple interactive button elements</li>
-                                <li>Color-changing animal selection system</li>
-                                <li>Smooth click animations and feedback</li>
-                                <li>Consistent UI state management</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-challenge">
-                            <h4>Technical Challenge</h4>
-                            <p>
-                                Refactored repetitive event handling code to eliminate unexpected behavior from rapid clicks. 
-                                Implemented efficient OnClickListener logic that ensures only one UI action occurs per click, 
-                                significantly improving code readability and application responsiveness.
-                            </p>
-                        </div>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">OnClickListener</span>
-                            <span class="tech-tag">UI State Management</span>
-                            <span class="tech-tag">Event Handling</span>
-                        </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">XML</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Learning Section -->
-    <section class="projects-learning">
-        <div class="container">
-            <div class="section-label">Development Journey</div>
-            <h2>What I Learned</h2>
-            <div class="learning-insights">
-                <div class="insight-card">
-                    <div class="insight-icon">🎯</div>
-                    <h3>Input Validation</h3>
-                    <p>Mastered comprehensive validation techniques to prevent crashes and ensure data integrity across all user inputs.</p>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Weight_Converter_app.webp" alt="Weight Converter App Preview" loading="lazy">
                 </div>
-                <div class="insight-card">
-                    <div class="insight-icon">🔧</div>
-                    <h3>Error Handling</h3>
-                    <p>Implemented robust error handling mechanisms that provide clear feedback and maintain app stability under all conditions.</p>
-                </div>
-                <div class="insight-card">
-                    <div class="insight-icon">⚡</div>
-                    <h3>Code Optimization</h3>
-                    <p>Refined code structure by eliminating duplication and improving efficiency, resulting in cleaner and more maintainable applications.</p>
-                </div>
-                <div class="insight-card">
-                    <div class="insight-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Developed intuitive interfaces with smooth interactions, focusing on user experience and visual consistency throughout the apps.</p>
+                <div class="project-content">
+                    <h3>Weight Converter App</h3>
+                    <p class="project-description">
+                        Converts weight between kilograms and pounds with validation.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Kg ↔ Lbs conversion</li>
+                            <li>Live calculation</li>
+                            <li>Crash prevention</li>
+                            <li>Reset support</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">XML</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Let's Build Something Together</h2>
-                <p>Interested in my work? I'm actively seeking internship opportunities to grow my mobile development skills.</p>
-                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Animal_Catalogue_app.webp" alt="Animal Catalogue App Preview" loading="lazy">
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
+                <div class="project-content">
+                    <h3>Animal Catalogue App</h3>
+                    <p class="project-description">
+                        Swipeable animal cards with category filtering.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Category browsing</li>
+                            <li>ViewPager navigation</li>
+                            <li>Dynamic content</li>
+                            <li>Smooth UI</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">ViewPager</span>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Abhay Das Malikaveettil. Built with passion.</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/Button_Interaction_app.webp" alt="Button Interaction App Preview" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3>Button Interaction App</h3>
+                    <p class="project-description">
+                        Demonstrates button interaction and UI state handling.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Multiple buttons</li>
+                            <li>Color feedback</li>
+                            <li>Smooth animations</li>
+                            <li>Stable UI state</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">OnClickListener</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- projects-grid -->
+    </div> <!-- container -->
+</section> <!-- projects-section -->
+
+<!-- Learning Section -->
+<section class="projects-learning">
+    <div class="container">
+        <div class="section-label">Development Journey</div>
+        <h2>What I Learned</h2>
+        <div class="learning-insights">
+            <div class="insight-card">🎯 Input Validation</div>
+            <div class="insight-card">🔧 Error Handling</div>
+            <div class="insight-card">⚡ Code Optimization</div>
+            <div class="insight-card">🎨 UI/UX Design</div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Abhay Das Malikaveettil. Built with passion.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
