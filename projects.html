@@ -4,178 +4,280 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Abhay Das Malikaveettil</title>
+    <meta name="description" content="Projects by Abhay Das Malikaveettil including portfolio work, internship tasks, and Java application projects that showcase backend and full stack development skills.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="nav-brand">
-        <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-    </div>
-</nav>
+    <section class="page-header">
+        <div class="container">
+            <div class="section-label">My Work</div>
+            <h1 class="page-title">Projects</h1>
+            <p class="page-subtitle">Portfolio, internship, and Java project work</p>
+        </div>
+    </section>
 
-<!-- Page Header -->
-<section class="page-header">
-    <div class="container">
-        <div class="section-label">My Work</div>
-        <h1 class="page-title">Android Projects</h1>
-        <p class="page-subtitle">Mobile applications built with Java & Android Studio</p>
-    </div>
-</section>
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-label">Portfolio</div>
+            <h2>Featured Projects</h2>
+            <p class="section-intro">
+                These projects reflect the work I have done across personal portfolio development,
+                internship tasks, and Java application building. They highlight responsive design,
+                structured coding, and practical problem-solving.
+            </p>
 
-<!-- Projects Section -->
-<section class="projects-section">
-    <div class="container">
-        <div class="section-label">Portfolio</div>
-        <h2>Featured Projects</h2>
-        <p class="section-intro">
-            A collection of Android applications demonstrating my skills in mobile development,
-            UI/UX design, and clean Java implementation.
-        </p>
-
-        <div class="projects-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/Authentication_app.webp" alt="Authentication App Preview" loading="lazy">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        Designed and developed a personal portfolio website to present my skills, internship
+                        experience, projects, and contact details in a clean recruiter-friendly format.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Netlify</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Responsive multi-page layout</li>
+                            <li>Professional about, skills, and contact sections</li>
+                            <li>Project showcase for recruiters and clients</li>
+                            <li>Resume-ready professional presentation</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dasabhayyy511-maker/portfolio-" class="project-link" target="_blank" rel="noopener">GitHub Repository</a>
+                        <a href="https://abhaydas-portfolio.netlify.app/" class="project-link" target="_blank" rel="noopener">Live Website</a>
+                    </div>
                 </div>
-                <div class="project-content">
+
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>Future Interns Full Stack Tasks</h3>
+                    <p class="project-description">
+                        Internship-based work focused on learning and applying modern web development concepts
+                        through practical assignments and portfolio-ready deliverables.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Task-based frontend and full stack learning</li>
+                            <li>Hands-on portfolio and UI work</li>
+                            <li>Applied web structure and styling concepts</li>
+                            <li>Improved problem-solving through guided tasks</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="contact.html" class="project-link">Ask For Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">03</div>
                     <h3>Authentication App</h3>
                     <p class="project-description">
-                        A secure authentication system with login and registration functionality.
+                        A Java-based authentication project focused on login flow, registration logic, input
+                        validation, and cleaner user interaction.
                     </p>
-                    <div class="project-features">
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>User login validation</li>
-                            <li>Registration checks</li>
-                            <li>Error feedback</li>
-                            <li>Clean UI</li>
-                        </ul>
-                    </div>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
-                        <span class="tech-tag">XML</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Validation</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>User registration and login validation</li>
+                            <li>Error handling for invalid input</li>
+                            <li>Structured logic and clean UI</li>
+                            <li>Practical experience with application flow</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dasabhayyy511-maker" class="project-link" target="_blank" rel="noopener">View GitHub Profile</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/Weight_Converter_app.webp" alt="Weight Converter App Preview" loading="lazy">
-                </div>
-                <div class="project-content">
+                <div class="project-card">
+                    <div class="project-number">04</div>
                     <h3>Weight Converter App</h3>
                     <p class="project-description">
-                        Converts weight between kilograms and pounds with validation.
+                        A utility application that converts weight values and demonstrates validation,
+                        user-friendly interaction, and small-scale application logic.
                     </p>
-                    <div class="project-features">
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>Kg ↔ Lbs conversion</li>
-                            <li>Live calculation</li>
-                            <li>Crash prevention</li>
-                            <li>Reset support</li>
-                        </ul>
-                    </div>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
-                        <span class="tech-tag">XML</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">UI Logic</span>
+                        <span class="tech-tag">Problem Solving</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/Animal_Catalogue_app.webp" alt="Animal Catalogue App Preview" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <h3>Animal Catalogue App</h3>
-                    <p class="project-description">
-                        Swipeable animal cards with category filtering.
-                    </p>
                     <div class="project-features">
-                        <h4>Key Features</h4>
+                        <h4>Key Features:</h4>
                         <ul>
-                            <li>Category browsing</li>
-                            <li>ViewPager navigation</li>
-                            <li>Dynamic content</li>
-                            <li>Smooth UI</li>
+                            <li>Weight conversion between units</li>
+                            <li>Input validation and reset support</li>
+                            <li>Clean interface and stable flow</li>
+                            <li>Focused utility-based project design</li>
                         </ul>
                     </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dasabhayyy511-maker" class="project-link" target="_blank" rel="noopener">View GitHub Profile</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">05</div>
+                    <h3>Animal Catalogue App</h3>
+                    <p class="project-description">
+                        A category-based browsing app designed to present content with smoother navigation and
+                        organized user interaction.
+                    </p>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">ViewPager</span>
+                        <span class="tech-tag">Dynamic UI</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/Button_Interaction_app.webp" alt="Button Interaction App Preview" loading="lazy">
-                </div>
-                <div class="project-content">
-                    <h3>Button Interaction App</h3>
-                    <p class="project-description">
-                        Demonstrates button interaction and UI state handling.
-                    </p>
                     <div class="project-features">
-                        <h4>Key Features</h4>
+                        <h4>Key Features:</h4>
                         <ul>
-                            <li>Multiple buttons</li>
-                            <li>Color feedback</li>
-                            <li>Smooth animations</li>
-                            <li>Stable UI state</li>
+                            <li>Category browsing and navigation</li>
+                            <li>Dynamic content structure</li>
+                            <li>Swipe-based interaction</li>
+                            <li>Improved UI organization</li>
                         </ul>
                     </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dasabhayyy511-maker" class="project-link" target="_blank" rel="noopener">View GitHub Profile</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">06</div>
+                    <h3>Button Interaction App</h3>
+                    <p class="project-description">
+                        A practice application that explores button behavior, event handling, and interactive
+                        feedback in Java-based UI development.
+                    </p>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
-                        <span class="tech-tag">OnClickListener</span>
+                        <span class="tech-tag">Events</span>
+                        <span class="tech-tag">UI Feedback</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Multiple button interaction patterns</li>
+                            <li>Click-based state changes</li>
+                            <li>Visual feedback and UI behavior handling</li>
+                            <li>Improved event-driven programming practice</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dasabhayyy511-maker" class="project-link" target="_blank" rel="noopener">View GitHub Profile</a>
                     </div>
                 </div>
             </div>
-
-        </div> <!-- projects-grid -->
-    </div> <!-- container -->
-</section> <!-- projects-section -->
-
-<!-- Learning Section -->
-<section class="projects-learning">
-    <div class="container">
-        <div class="section-label">Development Journey</div>
-        <h2>What I Learned</h2>
-        <div class="learning-insights">
-            <div class="insight-card">🎯 Input Validation</div>
-            <div class="insight-card">🔧 Error Handling</div>
-            <div class="insight-card">⚡ Code Optimization</div>
-            <div class="insight-card">🎨 UI/UX Design</div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2024 Abhay Das Malikaveettil. Built with passion.</p>
-    </div>
-</footer>
+    <section class="projects-learning">
+        <div class="container">
+            <div class="section-label">What These Projects Show</div>
+            <h2>Skills Demonstrated Across My Work</h2>
+            <div class="learning-insights">
+                <div class="insight-card">Responsive UI Development</div>
+                <div class="insight-card">Java Application Logic</div>
+                <div class="insight-card">Validation And Error Handling</div>
+                <div class="insight-card">Portfolio And Recruiter Readiness</div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="tech-stack-section">
+        <div class="container">
+            <div class="section-label">Development Stack</div>
+            <h2>Technologies Used</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <h4>Frontend</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="tech-stack-item">
+                    <h4>Backend</h4>
+                    <p>Java, Spring Boot, REST APIs</p>
+                </div>
+                <div class="tech-stack-item">
+                    <h4>Database</h4>
+                    <p>SQL, MySQL, SQLite</p>
+                </div>
+                <div class="tech-stack-item">
+                    <h4>Tools</h4>
+                    <p>Git, GitHub, Postman, Android Studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested In My Work?</h2>
+                <p>I am open to internships and entry-level opportunities where I can keep building real software.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-highlight">&lt;</span>DEV<span class="brand-highlight">/&gt;</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abhay Das Malikaveettil. Built with purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
